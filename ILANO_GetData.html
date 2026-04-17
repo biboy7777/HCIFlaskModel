@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HCI Cluster Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>HCI Cluster Prediction</h1>
+    <form action="http://192.168.1.8:80/test" method="post">
+      <label>Object (1 = Button, 2 = Dial, 3 = Slider)
+        <input type="text" name="object" required>
+      </label>
+
+      <label>Age (1 = 19–25 (Young Adult), 2 = 26–35 (Early to Mid-Career Adult), 3 = 36–50 (Middle-Aged Adult), 4 = 51–71 (Older Adult/Pre-Retirement))
+        <input type="text" name="age" required>
+      </label>
+
+      <label>View (1 = Static, 2 = Dynamic, 3 = See-through)
+        <input type="text" name="view" required>
+      </label>
+
+      <label>Rating (0-6)
+        <input type="text" name="rating" required>
+      </label>
+
+      <label>Gender (1 = Male, 2 = Female)
+        <input type="text" name="gender" required>
+      </label>
+
+      <label>Glasses (0 = False, 1 = True)
+        <input type="text" name="glasses" required>
+      </label>
+
+      <label>Handedness (1 = Right, 2 = Left)
+        <input type="text" name="handedness" required>
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+
